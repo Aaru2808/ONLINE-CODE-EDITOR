@@ -19,23 +19,23 @@ Built using  React, Node.js, Express, Socket.io, and MongoDB.
 🛠️ Technologies Used
 
 Frontend
-React.js
+   React.js
 
-Quill.js
+   Quill.js
 
-Axios
+   Axios
 
-React Router
+   React Router
 
-Backend
+   Backend
 
-Node.js
+   Node.js
 
-Express.js
+   Express.js
 
-Socket.IO
+   Socket.IO
 
-MongoDB with Mongoose
+   MongoDB with Mongoose
 
 🔧 How to Run the Project
 
@@ -43,32 +43,32 @@ Make sure you have Node.js, npm, and MongoDB installed on your system.
 
 1. Clone the repository
 
-git clone https://github.com/<your-username>/DocumentEditor.git
-cd DocumentEditor
+   git clone https://github.com/<your-username>/DocumentEditor.git
+   cd DocumentEditor
 
 2. Setup Backend
 
-cd collab-editor
+   cd collab-editor
 
-npm install
+   npm install
 
-Create a .env file inside collab-editor/ and add your MongoDB URI:
+   Create a .env file inside collab-editor/ and add your MongoDB URI:
 
 
-MONGO_URL=mongodb://localhost:27017/document-editor
-PORT=5000
+   MONGO_URL=mongodb://localhost:27017/document-editor
+   PORT=5000
 
-Start the backend server:
+   Start the backend server:
 
-npm start/npm node index.js/npx nodemon index.js/server
+   npm start/npm node index.js/npx nodemon index.js/server
 
 3. Setup Frontend
 
-In a new terminal:
+In a new (2nd )terminal:
 
-cd frontend
-npm install
-npm start
+   cd frontend
+   npm install
+   npm start
 Your app will be available at:
 http://localhost:3000
 
@@ -77,9 +77,9 @@ Open your browser and go to: http://localhost:3000
 
 
 📦 Environment Variables
-Variable	Description
-MONGO_URL	MongoDB connection string
-PORT	Backend server port (default: 5000)
+    Variable	Description
+    MONGO_URL	MongoDB connection string
+    PORT	Backend server port (default: 5000)
 
 
 🙋‍♂️ Author
