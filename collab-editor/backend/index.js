@@ -66,8 +66,30 @@ app.post("/run", (req, res) => {
 });
 
 
+const path = require("path");
+
+// serve static files from frontend build
+const frontendBuildPath = path.join(__dirname, "../frontend/build");
+if (require("fs").existsSync(frontendBuildPath)) {
+  app.use(express.static(frontendBuildPath));
+
+  // fallback for React Router
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(frontendBuildPath, "index.html"));
+  });
+}
+
+
+
+
+
 
 // Start server
+// app.listen(PORT, () => {
+//     console.log(` Server running on http://localhost:${PORT}`);
+// });
+//const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(` Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
+

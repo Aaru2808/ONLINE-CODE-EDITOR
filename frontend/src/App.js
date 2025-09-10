@@ -11,7 +11,8 @@ function App() {
 
   const handleRun = async () => {
     try {
-      const res = await fetch("http://localhost:5000/run", {
+     // const res = await fetch("http://localhost:5000/run", {
+     const res = await fetch("/run", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
